@@ -32,4 +32,5 @@ select salary from employees where first_name='William';
 
 select employee_id, first_name, salary from employees 
 where salary > any (select salary from employees where first_name='William'); -- 윌리엄 두사람나와서 두사람중 하나의 급여중에 아무거나 크면됨 
-
+select * from book;
+delete from book where bookNo = 'B004' or bookNo = 'B006';
